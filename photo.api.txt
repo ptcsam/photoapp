@@ -1,0 +1,16 @@
+
+
+User      create User       POST /users
+User      update User       PUT /users/123
+User      delete User       DELETE /users/123
+User      view User         GET /users/123
+
+Image     create Image      POST /images
+Image     update Image      PUT /images/123
+Image     delete Image      DELETE /images/123
+Image     view Image        GET /images/123
+
+Comment   create Comment    POST /images/123/comments
+Comment   update Comment    PUT /comments/456
+Comment   delete Comment    DELETE /comments/456
+Comment   view Comment      GET /comments/456

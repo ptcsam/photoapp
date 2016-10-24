@@ -1,0 +1,23 @@
+{
+  "name": "photoapp",
+  "version": "1.0.0",
+  "description": "photo test app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptcsam/photoapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptcsam/photoapp/issues"
+  },
+  "homepage": "https://github.com/ptcsam/photoapp#readme",
+  "dependencies": {
+    "mongodb": "^2.2.11",
+    "restify": "^4.1.1"
+  }
+}
