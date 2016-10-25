@@ -7,5 +7,4 @@ var imageSchema = new Schema({
     contentType: String,
     comments: [Comment.schema]
 })
-
 mongoose.model('Image', imageSchema);

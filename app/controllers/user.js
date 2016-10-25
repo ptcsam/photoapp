@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var user = mongoose.model("User");
-var objectId = mongoose.Types.ObjectId;
+var User = mongoose.model("User");
+var ObjectId = mongoose.Types.ObjectId;
 
 exports.createUser = function(req, res, next) {
   var UserModel = new User(req.body);

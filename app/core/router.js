@@ -14,8 +14,29 @@ var server = restify.createServer();
 server.use(restify.fullResponse());
 server.use(restify.bodyParser());
 
-// Image Start
+// Image Start /////////////////////////////////////////////////////////////////
+
 server.post("/images", controllers.image.createImage);
 server.put("/images/:id", controllers.image.updateImage);
 server.del("/images/:id", controllers.image.deleteImage);
 server.get("/images/:id", controllers.image.viewImage);
+server.put("/images/:id/comments", controllers.article.createImageComment)
+
+// Image End ///////////////////////////////////////////////////////////////////
+
+// Comment Start ///////////////////////////////////////////////////////////////
+
+server.put("/comments/:id", controllers.comment.updateComment)
+server.del("/comments/:id", controllers.comment.deleteComment)
+server.get("/comments/:id", controllers.comment.viewComment)
+
+// Comment End /////////////////////////////////////////////////////////////////
+
+var port = process.env.PORT || 3000;
+server.listen(port, function(err) {
+    if (err) {
+      console.error(err)
+    } else {
+      console.log('App is ready at: ' + port)
+    }
+})
