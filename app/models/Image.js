@@ -1,9 +1,11 @@
 var mongoose = require("mongoose");
-var Schema = mongoose.Schema;
-var Comment = require("./Comment");
+var Schema   = mongoose.Schema;
+var Comment  = require("./Comment");
 
-var ImageSchema = new Schema({
-    title: String,
-    
+var imageSchema = new Schema({
+    filename: String,
+    contentType: String,
     comments: [Comment.schema]
 })
+
+mongoose.model('Image', imageSchema);
