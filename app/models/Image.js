@@ -3,7 +3,7 @@ var Schema   = mongoose.Schema;
 var Comment  = require("./Comment");
 
 var imageSchema = new Schema({
-    filename: String,
+    fileName: String,
     contentType: String,
     comments: [Comment.schema]
 })

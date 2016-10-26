@@ -32,15 +32,11 @@ server.get("/comments/:id", controllers.comment.viewComment)
 
 // Comment End /////////////////////////////////////////////////////////////////
 
-
-
-
-
 var port = process.env.PORT || 3000;
 server.listen(port, function(err) {
     if (err) {
       console.error(err)
     } else {
-      console.log('App is ready at: ' + port)
+      console.log('photoapp is ready at: ' + port)
     }
 })
